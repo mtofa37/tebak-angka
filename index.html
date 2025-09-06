@@ -1,1 +1,38 @@
-Hello world
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game Tebak Angka</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+  <div class="user-box">
+  <span id="greeting"></span>
+  <input type="text" id="nameInput" placeholder="Siapa namamu?">
+  <button onclick="simpanNama()">OK</button>
+</div>      <div class="container">
+            <h1>🎮 TEBAK ANGKA ❤️</h1>
+            <h2><i>Tebak angka 1-5 yang🫶🏻✨🤏🏻</i></h2>
+
+            <div class="input-group">
+                <input
+                    type="number"
+                    id="inputTebak"
+                    placeholder="Tebak angka 1-5"
+                />
+                <button onclick="tebakAngka()">Tebak!</button>
+                <button id="resetBtn" onclick="resetGame()">Reset</button>
+            </div>
+
+            <p id="pesan"></p>
+            <p id="akhir"></p>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
